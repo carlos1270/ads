@@ -1,5 +1,5 @@
 # Variaveis importantes
-log=logs/log.txt
+log=logs/log_metricas.txt
 cont=1
 disk=sda5
 placa=wlo

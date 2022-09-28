@@ -1,9 +1,12 @@
-echo ID CpuUsr CpuSys CpuGst CpuWait CpuPerc MinFlt MajFlt %MEM Threads Swap RSS Size Data Hora > log2.txt
-echo Analisando Processo 1900
-echo ID CpuUsr CpuSys CpuGst CpuWait CpuPerc MinFlt MajFlt %MEM Threads Swap RSS Size Data Hora
-
+# Variaveis
 cont=1
-pid=3234
+pid=9061
+log=logs/log_processo.txt
+
+# Cabeçalho
+echo ID CpuUsr CpuSys CpuGst CpuWait CpuPerc MinFlt MajFlt %MEM Threads Swap RSS Size Data Hora > $log
+echo Analisando Processo $pid
+echo ID CpuUsr CpuSys CpuGst CpuWait CpuPerc MinFlt MajFlt %MEM Threads Swap RSS Size Data Hora
 
 while [ True ]
 do
@@ -16,7 +19,7 @@ rss=`cat /proc/$pid/status | grep VmRSS | awk '{print $2}'`
 size=`cat /proc/$pid/status | grep VmSize | awk '{print $2}'`
 data=`date '+%d/%m/%y %H:%M:%S'`
 
-echo $cont $info $threads $swap $rss $size $data >> log2.txt
+echo $cont $info $threads $swap $rss $size $data >> $log
 echo $cont $info $threads $swap $rss $size $data
 
 sleep 1
