@@ -1,7 +1,7 @@
 # Variaveis
 cont=1
-pid=9061
-log=logs/log_processo.txt
+pid=1140
+log=logs/log_vm1_processo5_750.txt
 
 # Cabeçalho
 echo ID CpuUsr CpuSys CpuGst CpuWait CpuPerc MinFlt MajFlt %MEM Threads Swap RSS Size Data Hora > $log

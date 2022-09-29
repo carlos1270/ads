@@ -1,8 +1,9 @@
 # Variaveis importantes
-log=logs/log_metricas.txt
+
+log=logs/log_vm1_metricas5_750.txt
 cont=1
-disk=sda5
-placa=wlo
+disk=sda2
+placa=enp
 
 # Cabeçalho
 echo Cont MenUsed MenFree MenShared SwapUsed SwapFree DiskBlockKB DiskUsed DiskUsedPerc CpuUsr CpuSys CpuIOWait CpuSoft CpuIdle NetBytesReceived NetPackagesReceived NetErrsReceived NetBytesTransmitid NetPackagesTransmitid NetErrsTransmitid Data Hora > $log
