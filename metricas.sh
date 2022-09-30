@@ -1,5 +1,6 @@
 # Variaveis importantes
 log=logs/log_vm2_metricas5_750.txt
+
 cont=1
 disk=sda2
 placa=enp
