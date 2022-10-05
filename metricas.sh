@@ -1,5 +1,5 @@
 # Variaveis importantes
-log=logs/log_vm2_metricas5_750.txt
+log=logs/log_vm2_metricas5_1M.txt
 
 cont=1
 disk=sda2
